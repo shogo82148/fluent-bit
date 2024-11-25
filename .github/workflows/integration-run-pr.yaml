@@ -31,7 +31,7 @@ jobs:
           time: '15s'
 
       - name: Download docker image from build artifacts
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           workflow: integration-build-pr.yaml
